@@ -27,7 +27,7 @@ a:hover,
 .match-detail-deep blockquote span i,
 .video-slider .slick-arrow:hover,
 .left-tiem-acounter .countdown li span
-{ color: #cc0000;} 
+{ color: #FE1E50;} 
 
 /* Theme Backgroung Color */
 .nav-list li a:hover,
@@ -83,7 +83,7 @@ a:hover,
 .top-categories ul li a:hover,
 .main-footer.style-2 .back-to-top:hover,
 .play-icon:hover
-{ background: #cc0000;}
+{ background: #222782;}
 
 /* Theme Border Color */
 .team-detail,
@@ -116,9 +116,9 @@ a:hover,
 .upcoming-fixture table tbody tr:hover .logo-width-name.w-icon::after,
 .product-slider .slick-arrow:hover,
 .main-footer.style-2 .back-to-top:hover
-{ border-color: #cc0000;}
+{ border-color: #222782;}
 
 /* THeme Basic Rgba */
 .previous-videos::before,
 .play-lable
-{ background: rgba( 204,0,0,0.5);}
+{ background: rgb( 254,30,80);}
