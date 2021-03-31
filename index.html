@@ -25,6 +25,37 @@
 	</script> -->
 </head>
 <body>
+	
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("May 8, 2021 10:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+			
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+			
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+		  // Output the result in an element with id="demo"
+		  document.getElementById("days").innerHTML = days + " Days " + hours + " Hours "
+		  + minutes + " Minutes " + seconds + " Seconds ";
+			
+		  // If the count down is over, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+		</script>
 
 <!-- Wrapper -->
 <div class="wrap push">
@@ -234,14 +265,14 @@
 				<!-- Macth left Time -->
 				<div class="col-sm-6 bg-2">
 					<div class="left-match-time">
-						<h2>Next Match</h2>
+						<h2>GCL3 COUNTDOWN</h2>
 						<ul id="countdown-1" class="countdown">
-						  	<li><span class="days">00</span>Day </li>
-							<li><span class="hours">00</span>Hours </li>
-							<li><span class="minutes">00</span>Minutes </li>
-							<li><span class="seconds">00</span>Seconds </li>
+						  	<li><span id="days"></span></li>
+							<!-- <li><span id="hours"></span></li>
+							<li><span id="minutes"></span></li>
+							<li><span id="seconds"></span></li> -->
 						</ul>
-						<span>12/02/2016 /19:00pm</span>
+						<span>08/05/2021 /10:00AM</span>
 					</div>
 				</div>
 				<!-- Macth left Time -->
@@ -978,7 +1009,7 @@
 		<!--Total Teams-->
 		<div class="team-grid theme-padding white-bg">
 			<div class="container">
-				<h2>Top Palyer</h2>
+				<h2>Team Captains</h2>
 				<div class="row">
 
 					<!-- Team Column -->
@@ -991,11 +1022,9 @@
 								<span class="desination">Bengaluru United</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1003,12 +1032,7 @@
 										<li>13</li>
 										<li>Atletico Nacional</li>
 										<li>
-											<ul class="social-icons">
-												<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-												<li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-											</ul>
+											
 										</li>
 									</ul>
 								</div>
@@ -1027,11 +1051,9 @@
 								<span class="desination">Gandada Gudi Soraba</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1063,11 +1085,9 @@
 								<span class="desination">Gudigar Legends</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1099,11 +1119,9 @@
 								<span class="desination">Konkan Warriors Goa</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1135,11 +1153,9 @@
 								<span class="desination">Malnad Bulldozers</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1171,11 +1187,9 @@
 								<span class="desination">Mumbaikars</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1207,11 +1221,9 @@
 								<span class="desination">Malnad Stages</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1243,11 +1255,9 @@
 								<span class="desination">Rural Challengers Bengaluru</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1279,11 +1289,9 @@
 								<span class="desination">Royal Cricketers Kumta</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1315,11 +1323,9 @@
 								<span class="desination">Sahyaadri Cricketers</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1351,11 +1357,9 @@
 								<span class="desination">Sirsi Royals</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1387,17 +1391,15 @@
 								<span class="desination">Smashers Udupi</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
 										<li>Goalkeeper</li>
 										<li>13</li>
-										<li>Atletico Nacional</li>
+										<li>Atletico N9acional</li>
 										<li>
 											<ul class="social-icons">
 												<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1423,11 +1425,9 @@
 								<span class="desination">Sonda Warriors</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1459,11 +1459,9 @@
 								<span class="desination">UK Gladiators</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1495,11 +1493,9 @@
 								<span class="desination">Yellapur Super Kings</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
@@ -1531,11 +1527,9 @@
 								<span class="desination">RTGS Cricket Club</span>
 								<div class="detail-inner">
 									<ul>
-										<li>Born</li>
-										<li>Position</li>
+										<li>Team Managers</li>
+										<li>Coordinators</li>
 										<li>Squad number</li>
-										<li>Previous Club</li>
-										<li>Fallow us on</li>
 									</ul>
 									<ul>
 										<li>August 31, 1988</li>
